@@ -1,0 +1,8 @@
+FROM garland/aws-cli-docker
+
+ADD virscan /virscan
+
+ENV AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID
+ENV AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
+
+CMD ["/virscan"]
